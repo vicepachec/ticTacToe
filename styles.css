@@ -26,7 +26,6 @@ body{
 	border: 1px solid black;
 	cursor: pointer;
 	transition: background-color 0.75s;
-	font-size: 100px;
 }
 
 .cell:hover{
@@ -52,10 +51,12 @@ body{
 
 .x{
 	color: red;
+	font-size: 150px;
 }
 
 .o{
 	color: blue;
+	font-size: 100px;
 }
 
 @keyframes win {
