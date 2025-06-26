@@ -22,14 +22,9 @@ const winningCombos = [
   [2, 4, 6]  // opposite diagonal
 ];
 
-function countChar(lane, player){
-	return lane.filter(val => val === player).length;
-}
-
 function checkWin(player){
 	for (let combo of winningCombos){
-		const lane = combo.map(index => gameBoard[index]);
-		if (countChar(lane, player) === 3)
+		if (combo.every(index => gameBoard[index] === player))
 			return combo;
 	}
 	return false
