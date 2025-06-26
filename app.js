@@ -56,7 +56,7 @@ for (let cell of cells){
 		if (gameOver) return;
 		if (cell.innerText === "")
 			if (currentPlayer === 'X'){
-				cell.innerText = "\u00D7";
+				cell.innerText = "X";
 				cell.classList.add('x')
 				gameBoard[cell.dataset.index] = currentPlayer;
 				victoryCombo = checkWin(currentPlayer);
